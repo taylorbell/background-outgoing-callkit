@@ -12,6 +12,12 @@
 		3E5F7183234F86EF001E0AD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E5F7181234F86EF001E0AD6 /* Main.storyboard */; };
 		3E5F7185234F86F0001E0AD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E5F7184234F86F0001E0AD6 /* Assets.xcassets */; };
 		3E5F7188234F86F0001E0AD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E5F7186234F86F0001E0AD6 /* LaunchScreen.storyboard */; };
+		3E5F7191234F8830001E0AD6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5F7190234F8830001E0AD6 /* MediaPlayer.framework */; };
+		3E5F7193234F8C83001E0AD6 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5F7192234F8C83001E0AD6 /* CallKit.framework */; };
+		3E5F7195234F8C8A001E0AD6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5F7194234F8C8A001E0AD6 /* AVFoundation.framework */; };
+		3E5F7197234FAD9A001E0AD6 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5F7196234FAD9A001E0AD6 /* AudioManager.swift */; };
+		3E5F7199234FAF44001E0AD6 /* MediaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5F7198234FAF44001E0AD6 /* MediaManager.swift */; };
+		3EB65D18234FC27E00B50ECB /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3EB65D17234FC27E00B50ECB /* beep.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		3E5F7184234F86F0001E0AD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E5F7187234F86F0001E0AD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E5F7189234F86F0001E0AD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E5F7190234F8830001E0AD6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		3E5F7192234F8C83001E0AD6 /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
+		3E5F7194234F8C8A001E0AD6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3E5F7196234FAD9A001E0AD6 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		3E5F7198234FAF44001E0AD6 /* MediaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaManager.swift; sourceTree = "<group>"; };
+		3EB65D17234FC27E00B50ECB /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E5F7195234F8C8A001E0AD6 /* AVFoundation.framework in Frameworks */,
+				3E5F7193234F8C83001E0AD6 /* CallKit.framework in Frameworks */,
+				3E5F7191234F8830001E0AD6 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,7 @@
 			children = (
 				3E5F717C234F86EF001E0AD6 /* RemoteEventSample */,
 				3E5F717B234F86EF001E0AD6 /* Products */,
+				3E5F718F234F882F001E0AD6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,7 +70,8 @@
 		3E5F717C234F86EF001E0AD6 /* RemoteEventSample */ = {
 			isa = PBXGroup;
 			children = (
-				3E5F717D234F86EF001E0AD6 /* AppDelegate.swift */,
+				3EB65D19234FD27E00B50ECB /* App */,
+				3EB65D17234FC27E00B50ECB /* beep.wav */,
 				3E5F717F234F86EF001E0AD6 /* ViewController.swift */,
 				3E5F7181234F86EF001E0AD6 /* Main.storyboard */,
 				3E5F7184234F86F0001E0AD6 /* Assets.xcassets */,
@@ -62,6 +79,26 @@
 				3E5F7189234F86F0001E0AD6 /* Info.plist */,
 			);
 			path = RemoteEventSample;
+			sourceTree = "<group>";
+		};
+		3E5F718F234F882F001E0AD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E5F7194234F8C8A001E0AD6 /* AVFoundation.framework */,
+				3E5F7192234F8C83001E0AD6 /* CallKit.framework */,
+				3E5F7190234F8830001E0AD6 /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3EB65D19234FD27E00B50ECB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3E5F717D234F86EF001E0AD6 /* AppDelegate.swift */,
+				3E5F7196234FAD9A001E0AD6 /* AudioManager.swift */,
+				3E5F7198234FAF44001E0AD6 /* MediaManager.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +133,11 @@
 				TargetAttributes = {
 					3E5F7179234F86EF001E0AD6 = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -122,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EB65D18234FC27E00B50ECB /* beep.wav in Resources */,
 				3E5F7188234F86F0001E0AD6 /* LaunchScreen.storyboard in Resources */,
 				3E5F7185234F86F0001E0AD6 /* Assets.xcassets in Resources */,
 				3E5F7183234F86EF001E0AD6 /* Main.storyboard in Resources */,
@@ -135,6 +178,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E5F7199234FAF44001E0AD6 /* MediaManager.swift in Sources */,
+				3E5F7197234FAD9A001E0AD6 /* AudioManager.swift in Sources */,
 				3E5F7180234F86EF001E0AD6 /* ViewController.swift in Sources */,
 				3E5F717E234F86EF001E0AD6 /* AppDelegate.swift in Sources */,
 			);
